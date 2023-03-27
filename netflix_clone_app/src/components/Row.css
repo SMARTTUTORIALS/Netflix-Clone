@@ -1,0 +1,52 @@
+.row {
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.row_posters {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.poster_card {
+    object-fit: contain;
+    margin-right: 1rem;
+    width: 100%;
+}
+
+.row_posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row_poster {
+    cursor: pointer;
+    max-height: 10rem;
+    transition: all 450ms;
+}
+
+.row_poster:hover {
+    transform: scale(1.09);
+    opacity: 0.2;
+}
+
+.poster_overlay{
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png");  
+}
+
+.poster_overlay-large{
+    background-size: 50%;
+}
+
+.row_posterLarge {
+    max-height: 16rem;
+}
+
+.row_posterTitle {
+    padding-top: 0.5rem;
+    font-weight: 400;
+}

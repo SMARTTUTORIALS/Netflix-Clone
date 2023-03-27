@@ -1,0 +1,135 @@
+.loginScreen {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/d049a3bd-40ee-411b-9f16-d1def798d43b/d6aeb5a9-b14c-42d4-999e-c2f0d6c60f04/IN-en-20230313-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loginScreen_gradient {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top,
+            rgba(0, 0, 0, 0.8) 0,
+            rgba(0, 0, 0, 0) 60%,
+            rgba(0, 0, 0, 0.8) 100%);
+    
+}
+
+.loginScreen_logo {
+    position: fixed;
+    top: 20px;
+    left: 5rem;
+    width: 8rem;
+    object-fit: contain;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.loginScreen_button {
+    position: fixed;
+    right: 5rem;
+    top: 20px;
+    cursor: pointer;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    vertical-align: text-top;
+    width: auto;
+    min-height: 2rem;
+    padding: 0.25rem 1rem;
+    border: 0;
+    border-radius: 0.25rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.loginScreen_button:hover {
+    background: rgba(229, 9, 20, 0.9);
+}
+
+
+.loginScreen_body{
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.loginScreen_body > h1{
+    font-size: 3.025rem;
+    margin-bottom: 20px;
+    
+}
+.loginScreen_body > h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    
+}
+.loginScreen_body > h3{
+    font-size: 1.3rem;
+    font-weight: 400;    
+}
+
+.loginScreen_input{
+    margin: 20px;
+}
+
+.loginScreen_input > form > input{
+    vertical-align: text-top;
+    margin-right: 0.5rem;
+    border-radius: 0.25rem;
+    padding: 10px;
+    outline-width: 0;
+    height: 30px;
+    width: 30%;
+    border: none;
+    max-width: 600px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.loginScreen_getStarted{
+    padding: 16px 20px;
+    vertical-align: text-top;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background: rgb(229, 9, 20);
+    color: white;
+    border: 0;
+
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    font-weight: 600;
+    
+}
+
+@media only screen and (max-width: 450px){
+    .loginScreen_logo {
+        left: 2rem !important;
+        width: 6rem !important;
+    }
+
+    .loginScreen_button {
+        right: 3rem !important;
+    }
+
+    .loginScreen_body{
+        top: 15%;
+    }
+}

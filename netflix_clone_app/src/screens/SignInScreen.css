@@ -1,0 +1,94 @@
+.signinScreen {
+    max-width: 300px;
+    padding: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.signinScreen>form>h1 {
+    margin-bottom: 20px;
+}
+
+.signinScreen>form>h4 {
+    margin-top: 20px;
+}
+
+.signinScreen_gray {
+    color: gray;
+}
+
+.signinScreen_link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.signinScreen>form {
+    display: grid;
+    flex-direction: column;
+}
+
+.signinScreen_passGroup{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: white;
+    height: 40px;
+    margin-bottom: 14px;
+    border-radius: 0.25rem;
+    border: none;
+    padding: 5px 15px;
+}
+
+.signinScreen_passGroup>i {
+    color: darkgray;
+    margin: auto 0;
+}
+
+.siginScreen_passInput{
+    outline-width: 0;
+    border: none;
+    flex-grow: 1;
+}
+
+.signinScreen>form>input {
+    outline-width: 0;
+    height: 40px;
+    margin-bottom: 14px;
+    border-radius: 0.25rem;
+    border: none;
+    padding: 5px 15px;
+}
+
+.signinScreen>form>button {
+    margin-top: 20px;
+    padding: 16px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    color: white;
+    background: rgb(229, 9, 20);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.signinScreen>form>button:hover {
+    background: rgba(229, 9, 20, 0.7);
+}
+
+.validation {
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.25rem;
+    color: red;
+    text-align: start;
+    font-size: small;
+    display: none;
+}
+
+.is-invalid{
+    display: block;
+}
+
