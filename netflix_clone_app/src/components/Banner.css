@@ -94,8 +94,6 @@
     background: none;
     display: flex;
     align-items: flex-start;
-    height: 50vh;
-    
 }
 
 .close-button>i {

@@ -10,7 +10,10 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
 
     useEffect(() => {
         async function fetchData() {
-            const response = await axios.get(fetchUrl);
+            const response = await axios.get(fetchUrl)
+                .catch((err) => {
+                    return err.message;
+                });
             setMovies(response.data.results);
             return response;
         }
@@ -34,7 +37,7 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
                                         className={`row_poster ${isLargeRow && "row_posterLarge"}`}
                                         src={`${baseUrl}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
                                         alt={movie.name} />
-                                    
+
                                 </div>
                                 {/*The below movie title will only appear if the row is not a large poster row*/}
                                 {(!isLargeRow && <h5 className='row_posterTitle'>{movie.title || movie.name || movie.original_name}</h5>)}
