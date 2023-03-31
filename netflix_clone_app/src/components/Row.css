@@ -35,7 +35,7 @@
     background-size: 30%;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png");  
+    background-image: url("../../public/play-button-overlay.png");
 }
 
 .poster_overlay-large{

@@ -4,7 +4,7 @@ The UI is designed to closely resemble the original Netflix App
 
 Public Link to App :
 App is hosted using firebase hosting.
-Link : https://netflix-clone-e17cc.web.app/
+Link : https://netflix-clone-e17cc.firebaseapp.com/
 
 Features List:
 1. User Sign In
