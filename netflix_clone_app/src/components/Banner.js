@@ -36,6 +36,15 @@ function Banner() {
 
     }, []);
 
+
+    const playButtonHandler = () => {
+        console.log("This feature is under construction..");
+    }
+
+    const myListButtonHandler = () => {
+        console.log("This feature is under construction..");
+    }
+
     return (
         <header className='banner' style={{
             backgroundSize: "cover", backgroundImage:
@@ -45,7 +54,7 @@ function Banner() {
             <div className='banner_contents'>
                 <h1 className='banner_title'>{movie?.title || movie?.name || movie?.original_name}</h1>
                 <div className='banner_buttons'>
-                    <button className='banner_button'>Play</button>
+                    <button className='banner_button' onClick={playButtonHandler}>Play</button>
                     <button className='banner_button'>My List</button>
                 </div>
                 <h2 className='banner_description'>
